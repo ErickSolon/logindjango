@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: grey;
+}
+
+h1 {
+    color: white;
+}
+
+strong {
+    color: green;
+}
+
+#header {
+    background-color: #333;
+    color: white;
+}
+
+a.section:link, a.section:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.section:focus, a.section:hover {
+    text-decoration: underline;
+}
