@@ -27,7 +27,7 @@ SECRET_KEY = 'tm=1$3hw(b@p53oz((17v_#%=7^+5&4lj^s6u@vu%*9(5efwlo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://logindjango-erick.herokuapp.com/"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -122,3 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+if os.getcwd() == "/app":
+	ALLOWED_HOSTS = ["logindjango-erick.herokuapp.com"]
+	DEBUG = True
