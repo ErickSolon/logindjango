@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-herokuconf(config=siteprojeto.wsgi, db_colors=False, databases=True, test_runner=True, staticfiles=True, allowed_hosts=True, logging=True, secret_key=True, geodjango=False, db_ssl_required=True)
+herokuconf(locals())
 
 if os.getcwd() == "/app":
 	ALLOWED_HOSTS = ["logindjango-erick.herokuapp.com"]
