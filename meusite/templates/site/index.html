@@ -13,9 +13,5 @@
             <input type="submit" value="Entrar">
             {% csrf_token %}
         </form>
-
-        {% if ce %}
-            <h1>Usuário já existe!</h1>
-        {% endif %}
     {% endblock %}
 {% endif %}
