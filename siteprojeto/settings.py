@@ -27,7 +27,7 @@ SECRET_KEY = 'tm=1$3hw(b@p53oz((17v_#%=7^+5&4lj^s6u@vu%*9(5efwlo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://logindjango-erick.herokuapp.com/"]
 
 
 # Application definition
