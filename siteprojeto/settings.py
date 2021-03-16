@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 
+from django_on_heroku import settings as herokuconf
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -123,11 +124,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+herokuconf(
+    config=siteprojeto.wsgi, *, db_colors=False, databases=True, test_runner=True, 
+    staticfiles=True, allowed_hosts=True, logging=True, secret_key=True, geodjango=False, db_ssl_required=True
+)
+
 if os.getcwd() == "/app":
 	ALLOWED_HOSTS = ["logindjango-erick.herokuapp.com"]
 	DEBUG = True
 
-	BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-	STATICFILES_DIRS = (
-		os.path.join(BASE_DIR, 'static')
-	)
+	# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+	# STATICFILES_DIRS = (
+	# 	os.path.join(BASE_DIR, 'static')
+	# )
