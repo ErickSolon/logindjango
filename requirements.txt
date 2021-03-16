@@ -11,7 +11,7 @@ aiorpcX==0.18.5
 aiosqlite==0.16.1
 aiowinreg==0.0.3
 ajpy==0.0.4
-alembic==1.4.3.dev0
+alembic==1.5.7
 altgraph==0.17
 aniso8601==8.1.1
 apispec==3.3.1
