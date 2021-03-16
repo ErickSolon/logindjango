@@ -1,5 +1,5 @@
 # logindjango
-Login, cadastro, dashboard e administração customizada feito em django
+Login, cadastro, dashboard e administração customizada feito em django para testes.
 
 dados da administração:
   - usuário: admin
