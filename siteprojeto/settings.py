@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 
-# from django_on_heroku import settings as herokuconf
+from django_on_heroku import settings as herokuconf
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# herokuconf(locals())
+herokuconf(locals())
 
 if os.getcwd() == "/app":
 	ALLOWED_HOSTS = ["logindjango-erick.herokuapp.com"]
